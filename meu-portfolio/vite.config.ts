@@ -9,6 +9,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
   server: {
-    open: true // 🔥 abre automático no navegador
+    open: 'chrome'
   }
 })
