@@ -1,6 +1,4 @@
-import Inicio from './componentes/inicio';
-import NavBar from './componentes/layout/navbar';
-
+import NavBar from './componentes/layout/navBar';
 import './style.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -9,7 +7,7 @@ function App() {
     <Router>
       <NavBar/>
       <Routes>
-        <Route path="/" element={<Inicio/>} />
+        <Route path="/" element={<NavBar />} /> 
       </Routes>
     </Router>
   );
