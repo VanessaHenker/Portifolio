@@ -1,9 +1,10 @@
-import Home from './componentes/home';
-import NavBar from './componentes/layout/navBar';
-import './style.css';
+
+import NavBar from './components/layout/navBar';
+import Home from './components/pages/home';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-function App() {
+function App() {    
   return (
     <Router>
       <NavBar />
