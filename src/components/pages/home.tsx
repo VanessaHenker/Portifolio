@@ -2,7 +2,7 @@ function Home() {
   return (
     <main>
       <div>
-        <img src="./src/img/FotoVanessa.jpg" alt="Foto de Vanessa" />
+        <img src="./src/assets/img/FotoVanessa.jpg" alt="Foto de Vanessa" width="200" height="200" />
         <h2>Vanessa Silva</h2>
         <p>Desenvolvedora Front-End</p>
 
