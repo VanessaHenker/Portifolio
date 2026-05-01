@@ -1,12 +1,14 @@
-
 function NavBar() {
   return (
-    <nav>
-      <ul>
-        <li><a href="/">Início</a></li>
-        <li><a href="/sobre">Sobre</a></li>
-        <li><a href="/projeto">Projeto</a></li>
-        <li><a href="/contato">Contato</a></li>
+    <nav className="navbar">
+      <ul className="navbar__list">
+        <li className="navbar__item"><a href="/">Início</a></li>
+
+        <li className="navbar__item"><a href="/sobre">Sobre</a></li>
+
+        <li className="navbar__item"><a href="/projeto">Projetos</a></li>
+
+        <li className="navbar__item"><a href="/contato">Contato</a></li>
       </ul>
     </nav>
   );

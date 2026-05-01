@@ -1,4 +1,4 @@
-import foto from '../HeroSection/img/FotoVanessa.jpg;
+import foto from '../HeroSection/img/FotoVanessa.jpg';
 
 function HeroSection() {
   return (
