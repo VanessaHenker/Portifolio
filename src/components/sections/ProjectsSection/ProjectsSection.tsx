@@ -1,5 +1,6 @@
-import ProjectCard from "../ProjectCard/ProjectCard";
-import projeto1 from "../../assets/img/Projeto1.png";
+import ProjectCard from "../../../cards/ProjectCard";
+import "./ProjectsSection.css";
+import projeto1 from "./img/Projeto1.png";
 
 function ProjectsSection() {
   const projects = [
