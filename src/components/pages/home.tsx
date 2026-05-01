@@ -1,3 +1,5 @@
+import ProjectCard from "../sections/projectCard";
+
 function Home() {
   return (
     <main>
@@ -12,6 +14,7 @@ function Home() {
 
       <section>
         <h2>Projetos Recentes</h2>
+        <ProjectCard/>
       </section>
     </main>
   );
