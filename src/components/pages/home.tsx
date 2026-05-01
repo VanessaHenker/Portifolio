@@ -1,4 +1,5 @@
-import ProjectCard from "../sections/projectCard";
+import type ContactSection from "../sections/ContactSection";
+import ProjectsSection  from "../sections/ProjectsSection";
 
 function Home() {
   return (
@@ -14,7 +15,12 @@ function Home() {
 
       <section>
         <h2>Projetos Recentes</h2>
-        <ProjectCard/>
+        <ProjectsSection />
+      </section>
+
+      <section>
+        <h2>Contato</h2>
+        <<ContactSection/>
       </section>
     </main>
   );
