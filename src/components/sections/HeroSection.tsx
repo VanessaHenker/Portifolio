@@ -1,8 +1,9 @@
+import foto from '../../assets/img/FotoVanessa.jpg';
 
 function HeroSection() {
   return (
     <section>
-      <img src="./src/assets/img/FotoVanessa.jpg" alt="Foto de Vanessa" width="200" height="200" />
+      <img src={foto} alt="Foto de Vanessa" width="200" height="200" />
       <h2>Vanessa Silva</h2>
       <p>Desenvolvedora Front-End</p>
 

@@ -6,7 +6,7 @@ function Home() {
   return (
     <main>
       <div>
-        <HeroSection />
+      <HeroSection />
       </div>
 
       <ProjectsSection />
