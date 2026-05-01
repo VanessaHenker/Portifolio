@@ -1,15 +1,18 @@
 import './ContactSection.css';
 import { useState } from 'react';
+import type { FormEvent } from 'react';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function ContactSection() {
   const [nome, setNome] = useState('');
   const [mensagem, setMensagem] = useState('');
 
-  const handleWhatsApp = (e: React.FormEvent) => {
+  const handleWhatsApp = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const numero = '5527999244452';
-    const text = `Olá! Me chamo ${nome}. ${mensagem}`;
+
+    const text = `Olá! Me chamo ${nome}. ${mensagem}`.trim();
 
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(text)}`;
 
@@ -42,6 +45,33 @@ function ContactSection() {
           Enviar no WhatsApp
         </button>
       </form>
+
+      {/* ÍCONES */}
+      <div className="contact-icons">
+        <a
+          href="mailto:vanessahenker09@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaEnvelope />
+        </a>
+
+        <a
+          href="https://github.com/VanessaHenker"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/VanessaSilva"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedin />
+        </a>
+      </div>
     </section>
   );
 }

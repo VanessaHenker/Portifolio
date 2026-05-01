@@ -70,3 +70,42 @@
 .contact-button:active {
   transform: scale(0.98);
 }
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 122, 0, 0.1);
+
+  color: #ff7a00; /* sua paleta laranja */
+  font-size: 22px;
+
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.contact-icons a:hover {
+  background-color: #ff7a00;
+  color: #fff;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 122, 0, 0.3);
+}
+
+.contact-icons svg {
+  width: 20px;
+  height: 20px;
+
+}

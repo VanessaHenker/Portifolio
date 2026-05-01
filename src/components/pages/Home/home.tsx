@@ -7,9 +7,6 @@ function Home() {
     <main>
       <div>
         <HeroSection />
-      </div>
-
-      <div>
         <ProjectsSection />
         <ContactSection />
       </div>
