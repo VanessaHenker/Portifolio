@@ -1,4 +1,10 @@
-function ProjectCard({ image, title, description }) {
+type ProjectCardProps = {
+  image: string;
+  title: string;
+  description: string;
+};
+
+function ProjectCard({ image, title, description }: ProjectCardProps) {
   return (
     <div className="project__card">
       <img src={image} alt={title} />
