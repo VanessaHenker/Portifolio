@@ -1,4 +1,5 @@
 import foto from '../HeroSection/img/FotoVanessa.jpg';
+import './HeroSection.css';
 
 function HeroSection() {
   return (
@@ -15,11 +16,10 @@ function HeroSection() {
         <h2 className="hero__name">Vanessa Silva</h2>
         <p className="hero__role">Desenvolvedora Front-End</p>
 
-        <h1 className="hero__title">Conteúdo do Projeto</h1>
+        <h1 className="hero__title">Sobre Mim</h1>
 
         <p className="hero__description">
-          Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre
-          meus projetos, habilidades e experiência profissional.
+          Bem-vindo ao meu portfólio. Este é o espaço onde compartilho minha jornada como desenvolvedora front-end, meus projetos e minha evolução constante na área de tecnologia.
         </p>
       </div>
     </section>
