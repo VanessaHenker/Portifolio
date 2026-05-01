@@ -4,17 +4,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+
+  /* correção principal da navbar fixa */
+  padding: 7rem 1.5rem 2rem;
+
   background: linear-gradient(
     135deg,
     var(--primaria),
     var(--maisEscuro)
   );
+
   color: var(--texto);
   overflow: hidden;
 }
 
-/* fundo decorativo (luz suave) */
+/* fundo decorativo */
 .hero::before {
   content: "";
   position: absolute;
@@ -31,21 +35,29 @@
   z-index: 0;
 }
 
-/* conteúdo acima do fundo */
+/* conteúdo */
 .hero__content {
   position: relative;
   text-align: center;
   max-width: 650px;
   z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 /* imagem */
 .hero__image {
-  width: 170px;
-  height: 170px;
+  width: 150px;
+  height: 150px;
+
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1.5rem;
+
+  margin-bottom: 1rem;
+
   border: 3px solid var(--secundaria);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 
@@ -53,48 +65,84 @@
 }
 
 .hero__image:hover {
-  transform: rotate(10deg);
+  transform: rotate(8deg) scale(1.03);
 }
 
 /* nome */
 .hero__name {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 0.4rem;
 }
 
 /* cargo */
 .hero__role {
-  font-size: 1rem;
-  letter-spacing: 3px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--secundaria);
-  margin-bottom: 1.5rem;
 }
 
 /* título */
 .hero__title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   font-family: 'Playfair Display', serif;
 }
 
 /* descrição */
 .hero__description {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.7;
+
   color: var(--texto-secundario);
 
-  margin-top: 1.5rem;
-  padding: 1.2rem 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
 
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(166, 124, 82, 0.2);
   border-radius: 12px;
 
   backdrop-filter: blur(8px);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (min-width: 600px) {
+  .hero {
+    padding: 8rem 2rem 3rem;
+  }
+
+  .hero__image {
+    width: 170px;
+    height: 170px;
+  }
+
+  .hero__name {
+    font-size: 2.3rem;
+  }
+
+  .hero__title {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    padding: 9rem 2rem 4rem;
+  }
+
+  .hero__name {
+    font-size: 2.5rem;
+  }
+
+  .hero__title {
+    font-size: 1.8rem;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+  }
 }

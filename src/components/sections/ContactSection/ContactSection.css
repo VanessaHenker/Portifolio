@@ -1,36 +1,53 @@
 .contact-section {
-  max-width: 600px;
-  margin: 80px auto;
-  padding: 24px;
-  text-align: center;
+  max-width: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   color: var(--texto);
+  text-align: center;
 }
 
+/* título */
 .contact-title {
-  font-size: 28px;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
   color: var(--secundaria);
 }
 
+/* formulário */
 .contact-form {
+  width: 100%;
+  max-width: 520px;
+
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 12px;
+
   background: var(--vidro);
-  padding: 24px;
+  padding: 1.8rem;
   border-radius: 16px;
+
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
 
+/* inputs */
 .contact-input,
 .contact-textarea {
   padding: 12px 14px;
   border-radius: 10px;
-  border: 1px solid rgba(214, 207, 199, 0.2);
-  background: var(--maisEscuro);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  background: rgba(10, 10, 10, 0.6);
+
   color: var(--texto);
-  font-size: 16px;
+  font-size: 1rem;
+
   outline: none;
   transition: 0.3s ease;
 }
@@ -43,22 +60,27 @@
 .contact-input:focus,
 .contact-textarea:focus {
   border-color: var(--secundaria);
-  box-shadow: 0 0 0 3px rgba(166, 124, 82, 0.2);
+  box-shadow: 0 0 0 3px rgba(166, 124, 82, 0.25);
 }
 
 .contact-textarea {
-  min-height: 120px;
+  min-height: 110px;
   resize: none;
 }
 
+/* botão */
 .contact-button {
   padding: 12px;
   border: none;
   border-radius: 10px;
+  font-weight: bolder;
+
   background: var(--secundaria);
   color: var(--texto);
-  font-size: 16px;
+
+  font-size: 1rem;
   cursor: pointer;
+
   transition: 0.3s ease;
 }
 
@@ -71,12 +93,12 @@
   transform: scale(0.98);
 }
 
+/* ícones */
 .contact-icons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 18px;
-  margin-top: 20px;
+  gap: 16px;
+  margin-top: 1.5rem;
 }
 
 .contact-icons a {
@@ -84,14 +106,15 @@
   align-items: center;
   justify-content: center;
 
-  width: 45px;
-  height: 45px;
+  width: 42px;
+  height: 42px;
 
   border-radius: 50%;
-  background-color: rgba(255, 122, 0, 0.1);
 
-  color: #ff7a00; /* sua paleta laranja */
-  font-size: 22px;
+  background-color: rgba(255, 122, 0, 0.1);
+  color: #ff7a00;
+
+  font-size: 20px;
 
   transition: all 0.25s ease;
   text-decoration: none;
@@ -104,8 +127,26 @@
   box-shadow: 0 6px 15px rgba(255, 122, 0, 0.3);
 }
 
-.contact-icons svg {
-  width: 20px;
-  height: 20px;
+@media (min-width: 600px) {
+  .contact-section {
+    padding: 2rem;
+  }
 
+  .contact-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact-section {
+    margin: 6rem auto;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
 }
