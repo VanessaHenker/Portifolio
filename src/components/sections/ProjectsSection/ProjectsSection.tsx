@@ -1,24 +1,35 @@
+import ProjectCard from "../ProjectCard/ProjectCard";
+import projeto1 from "../../assets/img/Projeto1.png";
+
 function ProjectsSection() {
+  const projects = [
+    {
+      id: 1,
+      image: projeto1,
+      title: "Loja de Carros",
+      description: "Loja virtual de venda de carros.",
+    },
+    {
+      id: 2,
+      image: projeto1,
+      title: "Loja de Carros",
+      description: "Loja virtual de venda de carros.",
+    },
+  ];
+
   return (
     <section>
       <h2>Projetos Recentes</h2>
 
-      <div>
-        <img src="./src/assets/img/Project1.jpg" />
-        <h3>Loja de Carros</h3>
-        <p>Loja virtual de venda de carros.</p>
-      </div>
-
-      <div>
-        <img src="./src/assets/img/Project1.jpg" />
-        <h3>Loja de Carros</h3>
-        <p>Loja virtual de venda de carros.</p>
-      </div>
-
-      <div>
-        <img src="./src/assets/img/Project1.jpg" />
-        <h3>Loja de Carros</h3>
-        <p>Loja virtual de venda de carros.</p>
+      <div className="projects__container">
+        {projects.map((project) => (
+          <ProjectCard
+            key={project.id}
+            image={project.image}
+            title={project.title}
+            description={project.description}
+          />
+        ))}
       </div>
     </section>
   );
