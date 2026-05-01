@@ -1,4 +1,3 @@
-
 import NavBar from './components/layout/navBar';
 import Home from './components/pages/home';
 
