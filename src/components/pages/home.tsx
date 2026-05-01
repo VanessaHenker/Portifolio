@@ -1,5 +1,5 @@
-import type ContactSection from "../sections/ContactSection";
-import ProjectsSection  from "../sections/ProjectsSection";
+import ContactSection from "../sections/ContactSection";
+import ProjectsSection from "../sections/ProjectsSection";
 
 function Home() {
   return (
@@ -10,18 +10,14 @@ function Home() {
         <p>Desenvolvedora Front-End</p>
 
         <h1>Conteúdo do Projeto</h1>
-        <p>Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre meus projetos, habilidades e experiência profissional. Sinta-se à vontade para explorar e conhecer mais sobre mim.</p>
+        <p>
+          Bem-vindo ao meu portfólio! Aqui você encontrará informações sobre meus projetos,
+          habilidades e experiência profissional.
+        </p>
       </div>
-
-      <section>
-        <h2>Projetos Recentes</h2>
-        <ProjectsSection />
-      </section>
-
-      <section>
-        <h2>Contato</h2>
-        <<ContactSection/>
-      </section>
+      
+      <ProjectsSection />
+      <ContactSection />
     </main>
   );
 }
