@@ -14,7 +14,7 @@ function NavBar() {
 
       <ul className={`navbar__list ${open ? "active" : ""}`}>
         <li className="navbar__item">
-          <a href="/">Inícioooo</a>
+          <a href="/">Início</a>
         </li>
 
         <li className="navbar__item">
