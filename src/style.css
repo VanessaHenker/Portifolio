@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -10,17 +9,19 @@ html {
 }
 
 :root {
-  --primaria: #6b4f3b;       
-  --secundaria: #a67c52;    
-  --escuro: #2b2118;         
-  --maisEscuro: #1a140f;     
+  --primaria: #6b4f3b;
+  --secundaria: #a67c52;
+  --escuro: #2b2118;
+  --maisEscuro: #1a140f;
   --vidro: rgba(255, 255, 255, 0.05);
 
-  --texto: #f5f5f5;         
-  --texto-secundario: #d6cfc7; 
+  --texto: #f5f5f5;
+  --texto-secundario: #d6cfc7;
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: var(--escuro);
-  color: var(--claro);
+  color: var(--texto);
 }
+  
