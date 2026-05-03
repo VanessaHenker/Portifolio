@@ -7,7 +7,12 @@ type ProjectCardProps = {
 
 function ProjectCard({ image, title, description, link }: ProjectCardProps) {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
+    <a
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project__link"
+    >
       <div className="project__card">
         <img src={image} alt={title} />
         <h3>{title}</h3>

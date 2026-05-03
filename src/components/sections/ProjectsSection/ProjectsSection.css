@@ -75,6 +75,11 @@ section h2::after {
   line-height: 1.4;
 }
 
+.project__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 /* TABLET */
 @media (min-width: 600px) {
   section {

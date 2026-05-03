@@ -19,7 +19,21 @@ function HeroSection() {
         <h1 className="hero__title">Sobre Mim</h1>
 
         <p className="hero__description">
-          Bem-vindo ao meu portfólio. Este é o espaço onde compartilho minha jornada como desenvolvedora front-end, meus projetos e minha evolução constante na área de tecnologia.
+          <p>
+            Bem-vindo ao meu portfólio. Este espaço reúne minha trajetória como desenvolvedora front-end, com foco na construção de projetos práticos e na evolução contínua das minhas habilidades em desenvolvimento web.
+          </p>
+
+          <p>
+            Atuo como desenvolvedora front-end, com experiência na criação de interfaces responsivas e componentizadas utilizando React, TypeScript e JavaScript. Também tenho prática com integração de APIs e manipulação de dados em aplicações web.
+          </p>
+
+          <p>
+            Busco aplicar boas práticas de desenvolvimento, com atenção à organização do código, reutilização de componentes e construção de uma arquitetura limpa e escalável. Meu foco é entender a aplicação como um todo, desde a interface até o fluxo de dados e sua estrutura interna.
+          </p>
+
+          <p>
+            Atualmente, sigo aprofundando meus conhecimentos em desenvolvimento full stack, visando evoluir para a construção de aplicações mais completas e bem estruturadas.
+          </p>
         </p>
       </div>
     </section>
