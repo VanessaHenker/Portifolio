@@ -17,7 +17,7 @@ function ContactSection() {
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(text)}`;
 
     window.open(url, '_blank');
-  };
+  };' '
 
   return (
     <section className="contact-section">
@@ -27,7 +27,7 @@ function ContactSection() {
         <input
           className="contact-input"
           type="text"
-          placeholder="Nome"
+          placeholder="Seu Nome"
           value={nome}
           onChange={(e) => setNome(e.target.value)}
           required
