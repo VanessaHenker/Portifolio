@@ -2,15 +2,18 @@ type ProjectCardProps = {
   image: string;
   title: string;
   description: string;
+  link: string;
 };
 
-function ProjectCard({ image, title, description }: ProjectCardProps) {
+function ProjectCard({ image, title, description, link }: ProjectCardProps) {
   return (
-    <div className="project__card">
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+    <a href={link} target="_blank" rel="noreferrer">
+      <div className="project__card">
+        <img src={image} alt={title} />
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </a>
   );
 }
 
